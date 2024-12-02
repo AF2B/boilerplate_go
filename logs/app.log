@@ -1,0 +1,2 @@
+{"level":"info","timestamp":"2024-12-01T20:34:28.129-0300","caller":"cmd/main.go:22","msg":"Starting server...","port":"8080"}
+{"level":"info","timestamp":"2024-12-01T20:36:43.154-0300","caller":"cmd/main.go:22","msg":"Starting server...","port":"8080"}
