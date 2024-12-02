@@ -39,12 +39,10 @@ benchmark:
 
 # Gera o arquivo de cobertura dos testes
 coverage:
-	$(GOTEST) --coverprofile=coverage.out $(TEST_DIRS)
+	$(GOTEST) -coverprofile=coverage.out $(TEST_DIRS)
 	@echo "Cobertura gerada em coverage.out"
-	@echo "Para visualizar a cobertura execute:"
-	@echo "go tool cover -html=coverage.out -o coverage.html"
-
-# FIXME: go tool cover -html=coverage.out -o coverage.html
+	go tool cover -html=coverage.out -o coverage.html
+	@echo "Arquivo de cobertura HTML gerado em coverage.html"
 
 # Limpa os arquivos gerados pelo Go
 clean:
